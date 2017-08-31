@@ -1,0 +1,46 @@
+{
+  "name": "mocha-hot-webpack-plugin",
+  "version": "0.1.0",
+  "description": "Mocha plugin for webpack, allows in-memory hot reload for tests",
+  "main": "MochaHotPlugin.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test nyc --reporter=text-summary mocha test/**/*.test.js",
+    "report": "nyc report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vladislao/mocha-hot-webpack-plugin.git"
+  },
+  "keywords": [
+    "mocha",
+    "webpack",
+    "plugin",
+    "hmr",
+    "hot-reload",
+    "test",
+    "tests",
+    "backend",
+    "server"
+  ],
+  "author": "vladislao <netcemetry@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vladislao/mocha-hot-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/Vladislao/mocha-hot-webpack-plugin#readme",
+  "dependencies": {
+    "mocha": "3.5.0"
+  },
+  "devDependencies": {
+    "casual": "1.5.17",
+    "chai": "4.1.1",
+    "chai-spies": "0.7.1",
+    "cross-env": "5.0.5",
+    "eslint": "4.5.0",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.3.0",
+    "nyc": "11.1.0"
+  }
+}
